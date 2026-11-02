@@ -1,4 +1,4 @@
-MGA ストレッチスクール LP（HTML/CSS/JS分割版）
+Core Life FC用LP
 
 ■ 起動方法
 index.html をブラウザで開いてください。サーバーは不要です。
