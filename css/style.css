@@ -300,7 +300,7 @@ section {
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.12em;
-  color: #FFF;
+  color: var(--gold);
   text-align: center;
   margin: 0 0 12px;
   border-bottom: 1px solid var(--gold);
@@ -395,16 +395,16 @@ section {
   content: '';
 }
 .section-heading.light::before {
-    border-right: solid 4px #FFF;
+    border-left: solid 4px #FFF;
     border-top: solid 4px #FFF;
     top: 0;
-    right: 0;
+    left: 0;
 }
 .section-heading.light::after {
-    border-left: solid 4px #FFF;
+    border-right: solid 4px #FFF;
     border-bottom: solid 4px #FFF;
     bottom: 0;
-    left: 0;
+    right: 0;
 }
 .section-heading h2,
 .problem h2 {
@@ -615,23 +615,28 @@ td {
 .achievement h2 strong {
   color: #b18f48;
 }
+.achievement p {
+  text-align: center;
+  font-size: 13px;
+  color: #5f6f66;
+  margin: 0 0 35px;
+}
 .achievement-list {
   max-width: 850px;
   margin: auto;
   display: grid;
-  gap: 15px;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
 }
 .achievement-list article {
   background: #fff;
-  display: flex;
-  gap: 22px;
-  padding: 24px;
+  padding: 30px;
   box-shadow: 0 5px 18px #00331c10;
-  border-left: 4px solid var(--gold);
+  border-radius: 6px;
 }
-.achievement-list article > b {
-  font-size: 34px;
-  color: #c6d2ca;
+.achievement-content > b {
+  font-size: 12px;
+  color: var(--gold);
 }
 .achievement-list h3 {
   margin: 0 0 6px;
@@ -642,6 +647,13 @@ td {
   margin: 0;
   font-size: 13px;
   color: #5f6f66;
+  text-align: left;
+}
+.achievement-list article video {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  aspect-ratio: 16 / 9;
 }
 .sales-simulation {
   --sim-green: #367b5b;
@@ -1145,14 +1157,27 @@ td {
   .difference-list h3 {
     font-size: 15px;
   }
-  .research-tags {
-    flex-wrap: wrap;
+  .achievement h2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 0 0 35px;
   }
-  .research-tags span {
+  .achievement-list {
+    gap: 10px;
+  }
+  .achievement-list article {
+    padding: 12px;
+  }
+  .achievement-content > b {
+    font-size: 12px;
+  }
+  .achievement-list h3 {
+    font-size: 18px;
+  }
+  .achievement-list p {
     font-size: 11px;
-    padding: 9px 12px;
   }
-    .sales-simulation {
+  .sales-simulation {
     padding: 18px 12px;
     margin: 20px auto;
   }
