@@ -131,7 +131,7 @@ img {
 }
 .hero-visual {
   position: relative;
-  height: clamp(220px, 46vw, 320px);
+  height: clamp(300px, 46vw, 360px);
   margin: 0 auto 0;
   overflow: hidden;
   display: flex;
@@ -189,7 +189,7 @@ img {
 .hero-band {
   position: relative;
   z-index: 2;
-  margin: -24px auto 26px;
+  margin: -30px auto 0;
   width: fit-content;
   transform: rotate(-3deg);
   clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
@@ -203,19 +203,24 @@ img {
   padding: 12px 28px;
   box-shadow: 6px 6px 16px #00331c33;
 }
+.hero-approach-wrapper {
+  padding: 20px 20px;
+  background-image: url(../images/approach.jpg);
+  background-size: cover;
+  background-position: center;
+}
 .hero-approach {
-  margin: 0 0 34px;
+  margin: 0;
   font-weight: 900;
   line-height: 1.55;
   color: var(--green);
-  font-size: clamp(24px, 6.4vw, 40px);
+  font-size: clamp(45px, 6.8vw, 60px);
   letter-spacing: -0.02em;
   transform: rotate(-3deg);
 }
 .hero-approach small {
-  font-size: 0.55em;
+  font-size: 0.75em;
   font-weight: 800;
-  margin-left: 0.3em;
 }
 .ha-blue {
   color: var(--green5);
@@ -223,6 +228,7 @@ img {
   text-emphasis: filled dot var(--green5);
 }
 .ha-navy {
+  color: orange;
   -webkit-text-emphasis: filled dot var(--gold);
   text-emphasis: filled dot var(--gold);
   -webkit-text-emphasis-position: under left;
@@ -1287,8 +1293,12 @@ td {
     font-size: 10px;
     padding: 9px 12px;
   }
+  .hero {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .hero-main {
-    padding: 30px 20px 42px;
+    padding: 30px 0 42px;
   }
   .hero-title {
     margin-bottom: 26px;
@@ -1297,7 +1307,7 @@ td {
     padding: 10px 20px;
   }
   .hero-topline {
-    font-size: 11px;
+    font-size: 15px;
   }
   section {
     padding: 58px 18px;
