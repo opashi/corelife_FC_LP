@@ -8,7 +8,7 @@
   --ink: #1e3327;
   --muted: #5f6f66;
   --white: #fff;
-  --max: 1080px;
+  --max: 1000px;
   --green: #00331C;
   --green2: #002212;
   --green3: #00552E;
@@ -97,7 +97,7 @@ img {
   border-color: transparent transparent transparent #fff;
 }
 .hero-main {
-  max-width: 720px;
+  max-width: var(--max);
   margin: auto;
   padding: 44px 5vw 55px;
   text-align: center;
@@ -351,7 +351,7 @@ section {
   justify-content: center;
   gap: 60px;
   border-top: 1px solid #d9cba7;
-  max-width: 650px;
+  max-width: var(--max);
   margin: 25px auto;
   padding-top: 25px;
 }
@@ -372,7 +372,7 @@ section {
 .note {
   font-size: 12px;
   color: #6c6b64;
-  max-width: 760px;
+  max-width: var(--max);
   margin: 24px auto 0;
 }
 .problem {
@@ -426,7 +426,7 @@ section {
   font-size: clamp(30px, 5vw, 45px);
 }
 .problem-list {
-  max-width: 760px;
+  max-width: var(--max);
   margin: 35px auto;
   display: grid;
   gap: 12px;
@@ -455,7 +455,7 @@ section {
   color: #e6ca82;
 }
 .problem-photo {
-  max-width: 700px;
+  max-width: var(--max);
   margin: 35px auto;
   min-height: 230px;
 }
@@ -493,7 +493,7 @@ section {
   margin: 8px 0 12px;
 }
 .future-grid {
-  max-width: 850px;
+  max-width: var(--max);
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -539,11 +539,11 @@ section {
   text-align: center;
   font-size: clamp(23px, 3vw, 34px);
   margin: 0 auto 30px;
-  max-width: 750px;
+  max-width: var(--max);
 }
 .table-wrap {
   overflow-x: auto;
-  max-width: 850px;
+  max-width: var(--max);
   margin: auto;
   background: #fff;
   color: var(--green);
@@ -581,14 +581,14 @@ td {
 .table-note {
   font-size: 11px;
   color: #c5d8cc;
-  max-width: 850px;
+  max-width: var(--max);
   margin: 10px auto;
 }
 .comparison-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
-  max-width: 850px;
+  max-width: var(--max);
   margin: 35px auto;
 }
 .comparison-images .image-placeholder {
@@ -604,7 +604,7 @@ td {
   color: #e7c879;
 }
 .comparison-text {
-  max-width: 760px;
+  max-width: var(--max);
   margin: 15px auto;
   text-align: center;
 }
@@ -683,7 +683,7 @@ td {
   margin: 0;
 }
 .achievement-list {
-  max-width: 850px;
+  max-width: var(--max);
   margin: auto;
   display: grid;
   gap: 20px;
@@ -723,7 +723,7 @@ td {
   --sim-light: #edf5ef;
   --sim-border: #e3e9e4;
   --sim-text: #26382d;
-  max-width: 1000px;
+  max-width: var(--max);
   margin: 40px auto;
   padding: 32px;
   background: #fff;
@@ -1051,7 +1051,7 @@ td {
   line-height: 1.8;
 }
 .reasons {
-  max-width: 1000px;
+  max-width: var(--max);
   margin: auto;
 }
 .reasons .section-kicker {
@@ -1064,7 +1064,7 @@ td {
 }
 .reason-card {
   position: relative;
-  max-width: 780px;
+  max-width: var(--max);
   margin: 45px auto 60px;
   padding-bottom: 28px;
   border-bottom: 1px solid #dce5df;
@@ -1112,7 +1112,7 @@ td {
   color: #a88942;
 }
 .instructor-banner {
-  max-width: 850px;
+  max-width: var(--max);
   margin: 30px auto;
   display: grid;
   grid-template-columns: 220px 1fr;
@@ -1136,7 +1136,7 @@ td {
 }
 .trial-grid,
 .contact-grid {
-  max-width: 760px;
+  max-width: var(--max);
   margin: 25px auto;
   gap: 15px;
 }
@@ -1203,7 +1203,7 @@ td {
   margin: 0 0 35px;
 }
 .school-card {
-  max-width: 800px;
+  max-width: var(--max);
   margin: 20px auto 35px;
   background: #fff;
   color: var(--green);
@@ -1323,6 +1323,7 @@ td {
   }
   .proof-stats {
     gap: 25px;
+    max-width: 650px;
   }
   .proof-stats strong {
     font-size: 20px;
