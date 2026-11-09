@@ -1244,7 +1244,7 @@ td {
   font-weight: 800;
 }
 .site-footer {
-  background: var(--green2);
+  background: var(--white);
   color: #d9e8de;
   text-align: center;
   padding: 35px 20px 85px;
